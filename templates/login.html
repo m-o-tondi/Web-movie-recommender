@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+	<form action="/home">
+		ID: <input type="text" name="userid" id ="user-id" value=""><br>
+		<input type="submit" id="submit-button" value="Submit">
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+		// setup some JSON to use
+
+		window.onload = function() {
+			// setup the button click
+			document.getElementById("submit-button").onclick = function() {
+				doWork()
+			};
+		}
+
+		function doWork() {
+			var number = document.getElementById('user-id').value;
+			var uid = [
+						{
+							"UserID" : number,
+						}
+					];
+			
+			// ajax the JSON to the server
+			$.post("id_receiver", JSON.stringify(uid));
+		}
+	</script>
+
+
+	
+{% endblock content %}
