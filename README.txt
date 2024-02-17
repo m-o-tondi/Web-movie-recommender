@@ -1,4 +1,4 @@
-To run system, in command line/terminal, navigate to directory containing files Rec2.py, json_io.py, and folders static, ml-latest-small, and templates and type 
+To run system type 
 
 	"python3 json_io.py"
 
@@ -21,8 +21,6 @@ Type in a number 1-610, corresponding to a userID who has rated a movie, and you
 In the navbar there is also "Already Rated". click on this to be sent to see all the books this user has already rated, and be allowed to change the rating on them, using dropdown boxes on each item.
 
  ============================SYSTEM FEATURES============================
-
-200 words starts now:
 
 Rec2.py: 
 
