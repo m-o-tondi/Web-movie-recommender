@@ -1,9 +1,3 @@
-#=======================================================================
-#Implementation and adaptation of Matrix Factorisation 
-#demonstrated by Nick Becker (RAPIDS Team at NVIDIA) at
-#https://beckernick.github.io/matrix-factorization-recommender/
-#=======================================================================
-
 import pandas as pd
 import numpy as np
 import os
